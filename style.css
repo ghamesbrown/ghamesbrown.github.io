@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --max-view: 1100px;
+}
+
+body {
+    line-height: 1.5;
+    font-size: 1rem;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.main-header {
+    box-shadow: 0 0 1px 1px rgba(29, 17, 51, .04), 0 0 3px 2px rgba(9, 32, 77, .12), 0 0 2px -3px rgba(29, 17, 51, .12);
+}
+
+.main-header-container {
+    max-width: var(--max-view);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.logo {
+    border-radius: 10rem;
+    height: 150px;
+    width: 150px;
+    margin: auto 0;
+    padding: 1rem;
+    cursor: pointer;
+    
+}
+
+.main-container {
+    height: fit-content;
+}
+
+.content-container {
+    max-width: var(--max-view);
+    margin: 0 auto;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#whoami {
+    background-color: black;
+    color: white;
+    display: grid;
+    place-items: center;
+    height: 50vh;
+}
+
+#intro {
+    width: 27ch;
+    animation: typing 2s steps(27), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    padding: 0;
+}
+
+#profession {
+    color: yellow;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+.my-experience-container {
+
+    display: flex;
+    gap: 3rem;
+
+}
+
+.company-title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: rgba(220, 220, 220, 0.94);
+    border-radius: 10px;
+    padding: 2rem;
+    gap: 1rem;
+
+    &:hover {
+        background-color: rgba(210, 210, 210, 0.94);
+    }
+
+}
+
+.double-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.navigator-button {
+    padding: 10px;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: rgb(255, 192, 75);
+    font-weight: bold;
+    background-color: gray;
+
+    &:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+footer{
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: var(--max-view);
+    margin: 0 auto;
+    height: 20vh;
+    gap: 0.5rem;
+}
+
+.coder {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (width < 750px){
+    .double-row {
+        grid-template-columns: 1fr;
+    }
+    .section-image {
+        height: 50px;
+        width: 50px;
+    }
+
+    .my-experience-container {
+        gap: 1rem;
+    }
+
+    
+}
+
+.content-container p {
+    font-size: 0.96rem;
+    padding-top: 1.5rem;
+}

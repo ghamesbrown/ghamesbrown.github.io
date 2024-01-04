@@ -102,6 +102,9 @@ body {
     padding: 2rem;
     gap: 1rem;
 
+    h4 {
+      font-weight: 300;
+    }
     &:hover {
         background-color: rgba(210, 210, 210, 0.94);
     }
@@ -119,13 +122,14 @@ body {
     border-radius: 2rem;
     font-size: 0.9rem;
     text-transform: uppercase;
-    color: rgb(255, 192, 75);
+    color: #F58F00; 
     font-weight: bold;
-    background-color: gray;
+    background-color: #3D3D3D;
 
     &:hover {
-        background-color: black;
+        background-color: #804A00;
         color: white;
+        transition: background-color 0.5s, color 0.3s ease-in;
         cursor: pointer;
     }
 }

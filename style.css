@@ -189,6 +189,11 @@ footer {
         gap: 1rem;
     }
 
+    .logo {
+        height: 7rem;
+        width: 7rem;
+    }
+
 }
 
 .content-container p {

@@ -166,15 +166,6 @@ footer {
     #footer-author {
         padding-right: 0.5rem;
     }
-
-    .grow {
-        transition: transform 0.3s ease-in-out;
-
-        &:hover {
-            transform: scale(1.6);
-        }
-    }
-
 }
 
 .coder {
@@ -203,4 +194,11 @@ footer {
 .content-container p {
     font-size: 0.96rem;
     padding-top: 1.5rem;
+}
+
+.grow {
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+        transform: scale(1.6);
+    }
 }
